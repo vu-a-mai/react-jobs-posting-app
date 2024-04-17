@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { FaMapMarker } from 'react-icons/fa'
+import { IoLocationOutline    } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 const JobListing = ({ job }) => {
@@ -31,7 +31,7 @@ const JobListing = ({ job }) => {
 
                     <div className="flex flex-col lg:flex-row justify-between mb-4">
                         <div className="text-orange-700 mb-3">
-                            <FaMapMarker className='inline text-lg mb-1 mr-1' />
+                            <IoLocationOutline    className='inline text-lg mb-1 mr-1' />
                             {job.location}
                         </div>
                         <Link
