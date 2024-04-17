@@ -1,5 +1,5 @@
 import React from 'react'
-import CircleLoader from 'react-spinners/CircleLoader'
+import RingLoader from 'react-spinners/RingLoader'
 
 const override = {
     display: 'block',
@@ -9,7 +9,7 @@ const override = {
 const Spinner = ({ loading }) => {
     return (
         <>
-            <CircleLoader
+            <RingLoader
                 color="#4338ca"
                 loading={loading}
                 cssOverride={override}
