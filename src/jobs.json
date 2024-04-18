@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "b140",
-      "title": "react JS",
-      "type": "Internship",
-      "location": "Lorem",
-      "description": "Lorem",
-      "salary": "$100K - 125K",
-      "company": {
-        "name": "Lorem",
-        "description": "Lorem if",
-        "contactEmail": "lorem@lorem.csom",
-        "contactPhone": "111111111111"
-      }
     }
   ]
 }
