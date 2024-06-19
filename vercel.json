@@ -2,20 +2,16 @@
     "version": 2,
     "builds": [
       {
-        "src": "package.json",
+        "src": "./",
         "use": "@vercel/static-build",
-        "config": {}
-      },
-      {
-        "src": "api/server.js",
-        "use": "@vercel/node-build",
         "config": {}
       }
     ],
     "routes": [
       {
         "src": "/api/jobs",
-        "dest": "src/jobs.json"
+        "dest": "src/jobs.json",
+        "use": "@vercel/json"
       }
     ],
     "public": true
