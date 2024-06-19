@@ -18,5 +18,5 @@
         "dest": "src/jobs.json"
       }
     ],
-    "public": ["src"]
+    "public": true
   }
