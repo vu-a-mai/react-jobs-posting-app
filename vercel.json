@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/:match*",
+        "destination": "https://json-server-vercel-ten-liard.vercel.app/:match*"
+      }
+    ]
+  }
