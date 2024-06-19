@@ -2,21 +2,21 @@
     "version": 2,
     "builds": [
       {
-        "command": "npm run build"
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {}
       },
       {
         "src": "api/server.js",
-        "use": "@vercel/node",
-        "config": {
-          "memory": 1024,
-          "includeFiles": "jobs.json"
-        }
+        "use": "@vercel/node-build",
+        "config": {}
       }
     ],
     "routes": [
       {
-        "src": "/api/*",
-        "dest": "api/server.js"
+        "src": "/api/jobs",
+        "dest": "src/jobs.json"
       }
-    ]
+    ],
+    "public": ["src"]
   }
