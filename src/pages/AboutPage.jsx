@@ -7,7 +7,7 @@ const NotFoundPage = () => {
   return (
     <>
       <section className="text-center flex flex-col justify-center items-center h-96">
-        <img className="h-40 w-auto" src={logo} alt="React Jobs" />
+        <img className="h-20 w-auto" src={logo} alt="React Jobs" />
         <h1 className="text-6xl font-bold mb-4">About React Jobs Posting</h1>
         <p className="text-xl mb-5">
           This project is created using Vite React, TailwindCSS and JSON-Server.
