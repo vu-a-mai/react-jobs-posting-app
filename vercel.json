@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static-build",
+        "config": {},
+        "command": "npm run build:react"
+      },
+      {
+        "src": "api/server.js",
+        "use": "@vercel/node",
+        "config": {
+          "memory": 1024,
+          "includeFiles": "jobs.json"
+        },
+        "command": "npm run build:json-server"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/*",
+        "dest": "api/server.js"
+      }
+    ]
+  }

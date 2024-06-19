@@ -10,7 +10,6 @@ export default defineConfig({
       '/api': {
         target: 'https://json-server-vercel-ten-liard.vercel.app/',
         changeOrigin: true,
-        path: '/api',
         rewrite: (path) => path.replace(/^\/api/, ''),
       }
     }
